@@ -10,11 +10,11 @@ Get up and running with large language models locally.
 
 ### macOS
 
-[Download](https://ollama.com/download/Ollama-darwin.zip)
+[Download](https://github.com/ollama/ollama)
 
 ### Windows preview
 
-[Download](https://ollama.com/download/OllamaSetup.exe)
+[Download](https://github.com/ollama/ollama)
 
 ### Linux
 
