@@ -6,12 +6,36 @@ linters:
     - bidichk
     - bodyclose
     - containedctx
-    - contextcheck
-    - exportloopref
     - gocheckcompilerdirectives
-    # FIXME: for some reason this errors on windows
-    # - gofmt
-    # - goimports
+    - gofmt
+    - gofumpt
+    - gosimple
+    - govet
+    - ineffassign
+    - intrange
+    - makezero
     - misspell
     - nilerr
-    - unused
+    - nolintlint
+    - nosprintfhostport
+    - staticcheck
+    - unconvert
+    - usetesting
+    - wastedassign
+    - whitespace
+  disable:
+    - usestdlibvars
+    - errcheck
+linters-settings:
+  staticcheck:
+    checks:
+      - all
+      - -SA1019 # omit Deprecated check
+severity:
+  default-severity: error
+  rules:
+    - linters:
+        - gofmt
+        - goimports
+        - intrange
+      severity: info
